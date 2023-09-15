@@ -1,0 +1,13 @@
+{
+  "name": "retrosphere",
+  "version": "1.0.0",
+  "author": "Aditya Tarale <tarale.adi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "install-dependencies": "yarn install && cd api && yarn install && cd ../client && yarn install",
+    "dev": "concurrently \"cd api && yarn dev && cd..\" \"cd client && yarn dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
